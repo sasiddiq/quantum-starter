@@ -144,6 +144,9 @@ public class ExpenseTrackerStepDefs {
 		} else if (ConfigurationManager.getBundle().getProperty("appType").equals("Web")) {
 
 			driver.get("http://expensetracker.perfectomobile.com");
+			//driver.get("http://ec2-54-221-26-180.compute-1.amazonaws.com/");
+			//driver.get("http://ec2-54-221-26-180.compute-1.amazonaws.com/#/app-login");
+			 
 			driver.manage().window().maximize();
 			CommonStep.sendKeys(username, "username.text.box");
 			CommonStep.sendKeys(password, "password.text.box");
